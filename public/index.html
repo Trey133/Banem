@@ -156,18 +156,6 @@
     <a href="https://banem.net/ContactUs.html">Contact Us</a>
     </div>
     <div align="right">
-      <form align="right">
-        <div>
-          <input id="email" type="text" placeholder="Email">
-        </div>
-        <div>
-          <input id="password" type="text" placeholder="Password">
-        </div>
-        <div>
-          <button id="sign-in">Log In/Register</button>
-          <button id="sign-out">Log Out</button>
-        </div>
-      </form>
       <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
       <script>
         var config = {
@@ -199,7 +187,19 @@
           firebase.auth().signOut();
         });
       </script>
-    </div>
+      <form align="right">
+        <div>
+          <input id="email" type="text" placeholder="Email">
+        </div>
+        <div>
+          <input id="password" type="text" placeholder="Password">
+        </div>
+        <div>
+          <button id="sign-in">Log In/Register</button>
+          <button id="sign-out">Log Out</button>
+        </div>
+      </form>
+  </div>
   </div>
 <div class="main_page">
   <div class="page_header">
