@@ -171,17 +171,6 @@
           window.user = user;
         });
       </script>
-
-      <form align="right">
-        <div>
-          <input id="email" type="text" placeholder="Email">
-        </div>
-        <div>
-          <input id="password" type="text" placeholder="Password">
-        </div>
-        <div>
-          <button id="sign-in">Log In/Register</button>
-          <button id="sign-out">Log Out</button>
       <script>
         document.querySelector('#sign-in').addEventListener('click', function(e) {
           e.preventDefault();
@@ -198,6 +187,16 @@
           firebase.auth().signOut();
         });
       </script>
+      <form align="right">
+        <div>
+          <input id="email" type="text" placeholder="Email">
+        </div>
+        <div>
+          <input id="password" type="text" placeholder="Password">
+        </div>
+        <div>
+          <button id="sign-in">Log In/Register</button>
+          <button id="sign-out">Log Out</button>
         </div>
       </form>
   </div>
