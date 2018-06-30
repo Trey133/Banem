@@ -180,6 +180,7 @@
           var credential = firebase.auth.EmailAuthProvider.credential(email, password);
           var auth = firebase.auth()
           var currentUser = auth.currentUser;
+          alert("Hello", currentUser)
         });
         document.querySelector('#sign-out').addEventListener('click', function(e) {
           e.preventDefault();
