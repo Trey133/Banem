@@ -17,7 +17,7 @@
 }
 
 .nav-menu li {
-   display: block;
+   display: inline;
    list-style-type: none;
 }
 
