@@ -37,7 +37,6 @@
    display:none;
    background: #000000;
    color: limegreen;
-   white-space: nowrap;
 }
 
 .sub-sub {
@@ -45,7 +44,6 @@
    display:none;
    background: #000000;
    color: limegreen;
-   white-space: nowrap;
 }
 
 .sub-sub-sub {
@@ -53,7 +51,6 @@
    display:none;
    background: #000000;
    color: limegreen;
-   white-space: nowrap;
 }
 
 .nav-menu ul li:hover > ul {
