@@ -44,7 +44,7 @@
    content: "\25BC"; /*escaped unicode for the down arrow*/
    font-size: .5em;
    display: inline;
-   position: relative;
+   position: absolute;
 }
 
 /* Style inputs with type="text", select elements and textareas */
