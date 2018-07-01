@@ -56,6 +56,19 @@
     background-color: #ddd;
 }
 
+.dropdown-content b {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content b:hover {
+    background-color: #ddd;
+}
+
 .show {
     display: block;
 }
