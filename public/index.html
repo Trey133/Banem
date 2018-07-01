@@ -1,10 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <link rel="stylesheet" href="https://banem.net/main.css"/>
-<!-- Bootstrap core CSS -->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- SmartMenus jQuery Bootstrap Addon CSS -->
-<link href="../addons/bootstrap/jquery.smartmenus.bootstrap.css" rel="stylesheet">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -138,268 +133,43 @@
   }
 
   </style>
+
+  <!--[if IE]>
+  <style type="text/css">
+  	#menu li {
+  		position:static;
+  	}
+  </style>
+  <![endif]-->
+
 </head>
 <body>
 
-  <!-- <div class="navbar" align="left">
-    <a href="http://banem.net/index.html">Home</a>
-    <div class="dropdown">
-      <button class="dropbtn">Platforms
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="https://banem.net/platforms/Xbox.html">XBox</a>
-        <a href="https://banem.net/platforms/PlayStation.html">PlayStation</a>
-        <a href="https://banem.net/platforms/Nintendo.html">Nintendo</a>
-        <a href="https://banem.net/platforms/Steam.html">Steam</a>
-        <div class="dropdown">
-
-        <button class="dropbtn">Android
-
-        <i class="fa fa-caret-down"></i>
-
-        </button>
-
-        <div class="dropdown-content">
-          <a href="https://banem.net/platforms/Android/Android.html">General Discussion</a>
-          <div class="dropdown">
-
-          <button class="dropbtn">Games
-
-          <i class="fa fa-caret-down"></i>
-
-          </button>
-
-          <div class="dropdown-content">
-          <a href="https://banem.net/platforms/Android/games/ClashOfClans.html">ClashOfClans</a>
-        </div>
-        </div>
-        </div>
-        </div>
-        <a href="https://banem.net/platforms/IOS.html">IOS</a>
-        <a href="https://banem.net/platforms/Online.html">Online</a>
-      </div>
-    </div>
-    <a href="https://banem.net/games/">Games</a>
-    <a href="https://banem.net/chat.html">Chat</a>
-    <a href="https://banem.net/ContactUs.html">Contact Us</a>
-    </div>
-    <div align="right">
-      <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-      <script>
-        var config = {
-          apiKey: "AIzaSyDEGudhq6NCQ7OI3VplL9oyEUS8w_PyxZ8",
-          authDomain: "banem-a2ae6.firebaseapp.com",
-          databaseURL: "https://banem-a2ae6.firebaseio.com",
-          storageBucket: "banem-a2ae6.appspot.com",
-        };
-        firebase.initializeApp(config);
-      </script>
-      <script>
-        firebase.auth().onAuthStateChanged(function(user) {
-          window.user = user;
-        });
-      </script>
-      <script>
-        document.querySelector('#sign-in').addEventListener('click', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          var email = document.querySelector('#email').value;
-          var password = document.querySelector('#password').value
-          var credential = firebase.auth.EmailAuthProvider.credential(email, password);
-          var auth = firebase.auth()
-          var currentUser = auth.currentUser;
-        });
-        document.querySelector('#sign-out').addEventListener('click', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          firebase.auth().signOut();
-        });
-      </script>
-      <div>
-      <form align="right">
-        <div>
-          <input id="email" type="text" placeholder="Email" width="30">
-        </div>
-        <div>
-          <input id="password" type="text" placeholder="Password">
-        </div>
-        <div>
-          <button id="sign-in">Log In/Register</button>
-          <button id="sign-out">Log Out</button>
-        </div>
-      </form>
-      </div>
-  </div> -->
-
-
-  <!-- <div class="navbar">
-    <a href="https://banem.net">Home</a>
-    <a href="https://banem.net/chat.html">Chat</a>
-    <div class="dropdown">
-      <button class="dropbtn" onclick="myFunction()">Platforms
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content" id="myDropdown">
-
-        <div class="dropdown">
-          <button class="dropbtn" onclick="myFunction()">XBox
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content" id="myDropdown">
-            <a href="https://banem.net/platforms/XBox/index.html">General Discussion</a>
-          </div>
-        </div>
-
-        <div class="dropdown">
-          <button class="dropbtn" onclick="myFunction()">PlayStation
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content" id="myDropdown">
-            <a href="https://banem.net/platforms/PlayStation/index.html">General Discussion</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div> -->
-
-  <!-- Navbar -->
-  <div class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Banem.net</a>
-    </div>
-    <div class="navbar-collapse collapse">
-
-      <!-- Left nav -->
-      <ul class="nav navbar-nav">
-        <li><a href="https://banem.net">Home</a></li>
-        <li><a href="https://banem.net/chat.html">Chat</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Platforms <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="https://banem.net/platforms/PlayStation/index.html">PlayStation</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Nav header</li>
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">A long sub menu <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="disabled"><a class="disabled" href="#">Disabled item</a></li>
-                    <li><a href="#">One more link</a></li>
-                    <li><a href="#">Menu item 1</a></li>
-                    <li><a href="#">Menu item 2</a></li>
-                    <li><a href="#">Menu item 3</a></li>
-                    <li><a href="#">Menu item 4</a></li>
-                    <li><a href="#">Menu item 5</a></li>
-                    <li><a href="#">Menu item 6</a></li>
-                    <li><a href="#">Menu item 7</a></li>
-                    <li><a href="#">Menu item 8</a></li>
-                    <li><a href="#">Menu item 9</a></li>
-                    <li><a href="#">Menu item 10</a></li>
-                    <li><a href="#">Menu item 11</a></li>
-                    <li><a href="#">Menu item 12</a></li>
-                    <li><a href="#">Menu item 13</a></li>
-                    <li><a href="#">Menu item 14</a></li>
-                    <li><a href="#">Menu item 15</a></li>
-                    <li><a href="#">Menu item 16</a></li>
-                    <li><a href="#">Menu item 17</a></li>
-                    <li><a href="#">Menu item 18</a></li>
-                    <li><a href="#">Menu item 19</a></li>
-                    <li><a href="#">Menu item 20</a></li>
-                    <li><a href="#">Menu item 21</a></li>
-                    <li><a href="#">Menu item 22</a></li>
-                    <li><a href="#">Menu item 23</a></li>
-                    <li><a href="#">Menu item 24</a></li>
-                    <li><a href="#">Menu item 25</a></li>
-                    <li><a href="#">Menu item 26</a></li>
-                    <li><a href="#">Menu item 27</a></li>
-                    <li><a href="#">Menu item 28</a></li>
-                    <li><a href="#">Menu item 29</a></li>
-                    <li><a href="#">Menu item 30</a></li>
-                    <li><a href="#">Menu item 31</a></li>
-                    <li><a href="#">Menu item 32</a></li>
-                    <li><a href="#">Menu item 33</a></li>
-                    <li><a href="#">Menu item 34</a></li>
-                    <li><a href="#">Menu item 35</a></li>
-                    <li><a href="#">Menu item 36</a></li>
-                    <li><a href="#">Menu item 37</a></li>
-                    <li><a href="#">Menu item 38</a></li>
-                    <li><a href="#">Menu item 39</a></li>
-                    <li><a href="#">Menu item 40</a></li>
-                    <li><a href="#">Menu item 41</a></li>
-                    <li><a href="#">Menu item 42</a></li>
-                    <li><a href="#">Menu item 43</a></li>
-                    <li><a href="#">Menu item 44</a></li>
-                    <li><a href="#">Menu item 45</a></li>
-                    <li><a href="#">Menu item 46</a></li>
-                    <li><a href="#">Menu item 47</a></li>
-                    <li><a href="#">Menu item 48</a></li>
-                    <li><a href="#">Menu item 49</a></li>
-                    <li><a href="#">Menu item 50</a></li>
-                    <li><a href="#">Menu item 51</a></li>
-                    <li><a href="#">Menu item 52</a></li>
-                    <li><a href="#">Menu item 53</a></li>
-                    <li><a href="#">Menu item 54</a></li>
-                    <li><a href="#">Menu item 55</a></li>
-                    <li><a href="#">Menu item 56</a></li>
-                    <li><a href="#">Menu item 57</a></li>
-                    <li><a href="#">Menu item 58</a></li>
-                    <li><a href="#">Menu item 59</a></li>
-                    <li><a href="#">Menu item 60</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Another link</a></li>
-                <li><a href="#">One more link</a></li>
-              </ul>
-            </li>
-          </ul>
-        <li><a href="https://banem.net/ContactUs.html">Contact Us</a></li>
-        </li>
-      </ul>
-
-      <!-- Right nav -->
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="bootstrap-navbar.html">Default</a></li>
-        <li><a href="bootstrap-navbar-static-top.html">Static top</a></li>
-        <li><a href="bootstrap-navbar-fixed-top.html">Fixed top</a></li>
-        <li><a href="bootstrap-navbar-fixed-bottom.html">Fixed bottom</a></li>
-        <li><a href="#">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Nav header</li>
-            <li><a href="#">A sub menu <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="disabled"><a class="disabled" href="#">Disabled item</a></li>
-                <li><a href="#">One more link</a></li>
-              </ul>
-            </li>
-            <li><a href="#">A separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-
-    </div><!--/.nav-collapse -->
-  </div>
+  <ul id="menu">
+  	<li><a href="https://banem.net/index.html" title="Home" class="selected">Home</a></li>
+  	<li><a href="https://banem.net/chat" title="Chat">Chat</a></li>
+  	<li><a href="https://banem.net/platforms/index.html" title="Platforms">Platforms</a>
+  		<ul>
+  			<li><a href="https://banem.net/platforms/XBox/index.html" title="XBox">XBox</a>
+  				<ul>
+  					<li><a href="https://banem.net/platforms/XBox/index.html" title="General Discussion">General Discussion</a></li>
+  					<li><a href="#" title="Games">Games</a></li>
+            <ul>
+              <li><a href="https://banem.net/platforms/XBox/Games/index.html" title="Most Wanted">Most Wanted</a></li>
+            </ul>
+  				</ul>
+  			</li>
+  			<li><a href="#" title="Active projects">Active projects</a>
+  				<ul>
+  					<li><a href="#" title="Leaf industries">Leaf industries</a></li>
+  					<li><a href="#" title="Omnicron">Omnicron</a></li>
+  					<li><a href="#" title="Unkown.com">Unkown.com</a></li>
+  				</ul>
+  			</li>
+  		</ul>
+  	</li>
+  	<li><a href="#" title="Contact">Contact</a></li>
+  </ul>
 
 <div class="main_page">
   <div class="page_header">
@@ -431,16 +201,4 @@
 </div>
 </body>
 <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-<!-- SmartMenus jQuery plugin -->
-<script type="text/javascript" src="../jquery.smartmenus.js"></script>
-
-<!-- SmartMenus jQuery Bootstrap Addon -->
-<script type="text/javascript" src="../addons/bootstrap/jquery.smartmenus.bootstrap.js"></script>
-<script>jQuery.SmartMenus.Bootstrap.init()</script>
 </html>
