@@ -43,8 +43,8 @@
 .nav-menu > ul > li:after {
    content: "\25BC"; /*escaped unicode for the down arrow*/
    font-size: .5em;
-   display: inline;
-   position: absolute;
+   display: inline-block;
+   position: relative;
 }
 
 /* Style inputs with type="text", select elements and textareas */
