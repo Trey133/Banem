@@ -57,7 +57,7 @@
    display:inline;
 }
 
-.nav-menu ul li a:hover > ul {
+.nav-menu ul li a:hover {
   background: red;
   color: black;
 }
