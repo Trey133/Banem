@@ -14,13 +14,25 @@
    position:relative;
    display:inline-block;
    color: limegreen;
+   overflow: hidden;
+   background-color: #000000;
+   font-family: Arial;
 }
-
 .nav-menu li {
    display: inline;
    list-style-type: none;
    color: limegreen;
 }
+
+.nav-menu a {
+  float: left;
+  font-size: 16px;
+  color: limegreen;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 
 .sub-menu {
    position:absolute;
