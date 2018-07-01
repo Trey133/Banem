@@ -13,10 +13,11 @@
 .nav-menu {
    position:relative;
    display:inline-block;
+   color: limegreen;
 }
 
 .nav-menu li {
-   display: inline;
+   display: block;
    list-style-type: none;
 }
 
@@ -35,13 +36,13 @@
 }
 
 .nav-menu ul li:hover > ul {
-   display:inline-block;
+   display:block;
 }
 
 .nav-menu > ul > li:after {
    content: "\25BC"; /*escaped unicode for the down arrow*/
    font-size: .5em;
-   display: inline;
+   display: block;
    position: relative;
 }
 
