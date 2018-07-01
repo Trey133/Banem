@@ -19,7 +19,7 @@
 }
 .nav-menu li {
    display: inline;
-   list-style-type: circle;
+   list-style-type: none;
    color: limegreen;
 }
 
