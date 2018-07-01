@@ -21,6 +21,7 @@
    display: inline;
    list-style-type: circle;
    color: limegreen;
+   white-space: nowrap;
 }
 
 .nav-menu a {
@@ -28,6 +29,7 @@
   color: limegreen;
   padding: 10px 12px;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 
