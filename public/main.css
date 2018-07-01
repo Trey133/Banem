@@ -6,7 +6,8 @@
 
 .nav-wrapper {
    width:100%;
-   background: #999;
+   background: #00000;
+   color: limegreen;
 }
 
 .nav-menu {
@@ -22,13 +23,15 @@
 .sub-menu {
    position:absolute;
    display:none;
-   background: #ccc;
+   background: #000000;
+   color: limegreen;
 }
 
 .sub-sub {
    position:absolute;
    display:none;
-   background: #ccc;
+   background: #000000;
+   color: limegreen;
 }
 
 .nav-menu ul li:hover > ul {
