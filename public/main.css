@@ -21,7 +21,6 @@
    display: inline;
    list-style-type: circle;
    color: limegreen;
-   white-space: nowrap;
 }
 
 .nav-menu a {
