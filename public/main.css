@@ -21,6 +21,7 @@
    display: inline;
    list-style-type: none;
    color: limegreen;
+   padding: 14px 16px;
 }
 
 .nav-menu a {
