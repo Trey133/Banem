@@ -136,7 +136,7 @@
 </head>
 <body>
 
-  <div class="navbar" align="left">
+  <!-- <div class="navbar" align="left">
     <a href="http://banem.net/index.html">Home</a>
     <div class="dropdown">
       <button class="dropbtn">Platforms
@@ -225,7 +225,38 @@
         </div>
       </form>
       </div>
+  </div> -->
+
+
+  <div class="navbar">
+    <a href="https://banem.net">Home</a>
+    <a href="https://banem.net/chat.html">Chat</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">Platforms
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()">XBox
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="https://banem.net/platforms/XBox/index.html">General Discussion</a>
+          </div>
+        </div>
+      </div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()">PlayStation
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="https://banem.net/platforms/PlayStation/index.html">General Discussion</a>
+          </div>
+        </div>
+    </div>
   </div>
+
+
 <div class="main_page">
   <div class="page_header">
     <img src="/icons/banem_logo.jpg" alt="Banem Logo" align="left" width="150" height="150"/>
@@ -257,19 +288,20 @@
 </body>
 <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
 <script>
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
-for (i = 0; i < dropdown.length; i++) {
- dropdown[i].addEventListener("click", function() {
-   this.classList.toggle("active");
-   var dropdownContent = this.nextElementSibling;
-   if (dropdownContent.style.display === "block") {
-     dropdownContent.style.display = "none";
-   } else {
-     dropdownContent.style.display = "block";
-   }
- });
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
 }
 </script>
 </html>
