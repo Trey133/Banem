@@ -56,10 +56,6 @@
 	display:block;
 }
 
-/* SHOW SUBMENU 3 */
-#menu ul li ul:hover ul, #menu ul li ul.over ul {
-	display:block;
-}
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
