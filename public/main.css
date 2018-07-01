@@ -1,61 +1,40 @@
-#menu, #menu ul {
-	list-style:none;
-	padding:0;
-	margin:0;
-}
-#menu li {
-	float:left;
-	position:relative;
-	line-height: 4.5em;
-	width: 10em;
+.clearfix:after {
+  content: "";
+  display: table;
 }
 
-#menu li ul {
-	position:absolute;
-	margin-top:-1em;
-	margin-left:.5em;
-	display:none;
-}
-#menu ul li ul {
-	margin-top:-3em;
-	margin-left:7em;
+
+.nav-wrapper {
+   width:100%;
+   background: #999;
 }
 
-#menu a {
-	display:block;
-	border-right:1px solid #fff;
-	background:#E0F574;
-	color:#3B3B3B;
-	text-decoration:none;
-	padding:0 10px;
-}
-#menu a:hover {
-	background-color:#5798B4;
-	color:#fff;
-}
-#menu ul {
-	border-top:1px solid #fff;
-}
-#menu ul a {
-	border-right:none;
-	border-right:1px solid #fff;
-	border-bottom:1px solid #fff;
-	border-left:1px solid #fff;
-	background:#AEC245;
+.nav-menu {
+   position:relative;
+   display:inline-block;
 }
 
-/* SHOW SUBMENU 1 */
-#menu li:hover ul, #menu li.over ul {
-	display:block;
-}
-#menu li:hover ul ul, #menu li.over ul ul {
-	display:none;
-}
-/* SHOW SUBMENU 2 */
-#menu ul li:hover ul, #menu ul li.over ul {
-	display:block;
+.nav-menu li {
+   display: inline;
+   list-style-type: none;
 }
 
+.sub-menu {
+   position:absolute;
+   display:none;
+   background: #ccc;
+}
+
+.nav-menu ul li:hover > ul {
+   display:inline-block;
+}
+
+.nav-menu > ul > li:after {
+   content: "\25BC"; /*escaped unicode for the down arrow*/
+   font-size: .5em;
+   display: inline;
+   position: relative;
+}
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
