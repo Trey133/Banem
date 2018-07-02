@@ -59,7 +59,7 @@
 
 .nav-menu ul li a:hover {
   background: red;
-  color: brightyellow;
+  color: turquoise;
 }
 .nav-menu > ul > li:after {
    content: "\25BC"; /*escaped unicode for the down arrow*/
