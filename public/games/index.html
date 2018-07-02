@@ -205,138 +205,117 @@ color: #32CD32;
 </head>
 
 <body>
-
-<div class="navbar" align="left">
-
-<a href="http://banem.net/index.html">Home</a>
-
-<div class="dropdown">
-
-<button class="dropbtn">Platforms
-
-<i class="fa fa-caret-down"></i>
-
-</button>
-
-<div class="dropdown-content">
-
-<a href="https://banem.net/platforms/Xbox.html">XBox</a>
-
-<a href="https://banem.net/platforms/PlayStation.html">PlayStation</a>
-
-<a href="https://banem.net/platforms/Nintendo.html">Nintendo</a>
-
-<a href="https://banem.net/platforms/Steam.html">Steam</a>
-
-<a href="https://banem.net/platforms/Android.html">Android</a>
-
-<a href="https://banem.net/platforms/IOS.html">IOS</a>
-
-<a href="https://banem.net/platforms/Online.html">Online</a>
-
-</div>
-
-</div>
-
-<a href="https://banem.net/games/">Games</a>
-
-<a href="https://banem.net/chat.html">Chat</a>
-
-<a href="https://banem.net/ContactUs.html">Contact Us</a>
-
-</div>
-
-<div>
-
-<form align="right">
-
-<div>
-
-<input id="email" type="text" placeholder="Email">
-
-</div>
-
-<div>
-
-<input id="password" type="text" placeholder="Password">
-
-</div>
-
-<div>
-
-<button id="sign-in">Log In/Register</button>
-
-<button id="sign-out">Log Out</button>
-
-</div>
-
-</form>
-
-<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-
-<script>
-
-var config = {
-
-apiKey: "AIzaSyDEGudhq6NCQ7OI3VplL9oyEUS8w_PyxZ8",
-
-authDomain: "banem-a2ae6.firebaseapp.com",
-
-databaseURL: "https://banem-a2ae6.firebaseio.com",
-
-storageBucket: "banem-a2ae6.appspot.com",
-
-};
-
-firebase.initializeApp(config);
-
-</script>
-
-<script>
-
-firebase.auth().onAuthStateChanged(function(user) {
-
-window.user = user;
-
-});
-
-</script>
-
-<script>
-
-document.querySelector('#sign-in').addEventListener('click', function(e) {
-
-e.preventDefault();
-
-e.stopPropagation();
-
-var email = document.querySelector('#email').value;
-
-var password = document.querySelector('#password').value
-
-var credential = firebase.auth.EmailAuthProvider.credential(email, password);
-
-var auth = firebase.auth()
-
-var currentUser = auth.currentUser;
-
-});
-
-document.querySelector('#sign-out').addEventListener('click', function(e) {
-
-e.preventDefault();
-
-e.stopPropagation();
-
-firebase.auth().signOut();
-
-});
-
-</script>
-
-</div>
-
-</div>
+  <div class="main_page">
+    <div class="page_header">
+      <img src="/icons/banem_logo.jpg" alt="Banem Logo" align="left" width="150" height="150"/>
+    </div>
+    <div class="section_header section_header_blue">
+      <div id="about"></div>
+      "If You Can't Beat Em, Banem..."
+      </div>
+    </div>
+  <!-- NAV-MENU -->
+        <div class="nav-wrapper">
+           <nav class="nav-menu">
+              <ul class="clearfix">
+  <!-- HOME -->
+                 <li><a href="https://banem.net/index.html">Home</a></li>
+  <!-- CHAT -->
+                 <li><a href="https://banem.net/chitchat.html">Chat</a></li>
+  <!-- PLATFORMS -->
+                 <li><a href="https://banem.net/platforms/index.html">Platforms</a>
+                 <ul class="sub-menu">
+  <!-- XBOX -->
+                    <li><a href="https://banem.net/platforms/XBox/index.html">XBox</a>
+                      <ul class="sub-sub">
+                        <li><a href="https://banem.net/platforms/XBox/Games/wanted.html">Wanted</a></li>
+                        <li><a href="https://banem.net/platforms/XBox/Games/index.html">Games</a>
+                          <ul class="sub-sub-sub">
+                            <li><a href="https://banem.net/platforms/XBox/Games/COD.html">Call Of Duty</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+  <!-- PLAYSTATION -->
+                    <li><a href="https://banem.net/platforms/PlayStation/index.html">PlayStation</a>
+                      <ul class="sub-sub">
+                        <li><a href="https://banem.net/platforms/PlayStation/Games/wanted.html">Wanted</a></li>
+                        <li><a href="https://banem.net/platforms/PlayStation/Games/index.html">Games
+                          <ul class="sub-sub-sub">
+                            <li><a href="https://banem.net/platforms/PlayStation/Games/COD.html">Call Of Duty</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+  <!-- NINTENDO -->
+                    <li><a href="https://banem.net/platforms/Nintendo/index.html">Nintendo</a>
+                      <ul class="sub-sub">
+                        <li><a href="https://banem.net/platforms/Nintendo/Games/wanted.html">Wanted</a></li>
+                        <li><a href="https://banem.net/platforms/Nintendo/Games/index.html">Games
+                          <ul class="sub-sub-sub">
+                            <li><a href="https://banem.net/platforms/Nintendo/Games/.html"></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+  <!-- STEAM -->
+                    <li><a href="https://banem.net/platforms/Steam/index.html">Steam</a>
+                      <ul class="sub-sub">
+                        <li><a href="https://banem.net/platforms/Steam/Games/wanted.html">Wanted</a></li>
+                        <li><a href="https://banem.net/platforms/Steam/Games/index.html">Games
+                          <ul class="sub-sub-sub">
+                            <li><a href="https://banem.net/platforms/Steam/Games/.html"></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+  <!-- ANDROID -->
+                    <li><a href="https://banem.net/platforms/Android/index.html">Android</a>
+                      <ul class="sub-sub">
+                        <li><a href="https://banem.net/platforms/Android/Games/index.html">Games</a>
+                          <ul class="sub-sub-sub">
+                            <li><a href="https://banem.net/platforms/Android/Games/ClashOfClans.html">Clash Of Clans</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+  <!-- IOS -->
+                    <li><a href="https://banem.net/platforms/IOS/index.html">IOS</a>
+                      <ul class="sub-sub">
+                        <li><a href="https://banem.net/platforms/IOS/Games/index.html">Games</a>
+                          <ul class="sub-sub-sub">
+                            <li><a href="https://banem.net/platforms/IOS/Games/ClashOfClans.html">Clash Of Clans</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+  <!-- ONLINE -->
+                    <li><a href="https://banem.net/platforms/Online/index.html">Online</a>
+                      <ul class="sub-sub">
+                        <li><a href="https://banem.net/platforms/Online/Games/index.html">Games</a>
+                          <ul class="sub-sub-sub">
+                            <li><a href="https://banem.net/platforms/Online/Games/World Of Warcraft.html">World Of Warcraft</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+  <!-- FORGOTTEN -->
+                    <li><a href="https://banem.net/platforms/Forgotten/index.html">Forgotten</a>
+                    </li>
+  <!-- END PLATFORMS -->
+                 </ul>
+                 </li>
+  <!-- CONTACT -->
+                 <li><a href="https://banem.net/ContactUs.html">Contact Us</a>
+                 <ul class="sub-menu">
+                    <li><a href="mailto:admin@banem.net">Issues</a></li>
+                    <li><a href="https://banem.net/ContactUs.html">Suggestions</a></li>
+                 </ul>
+                 </li>
+              </ul>
+           </nav>
+        </div>
+  <!-- END NAV-MENU-->
 
 <h1>Add Your Favorite Game Here</h1>
 <h2>If enough people play it, we may add it to the site</h2>
