@@ -4,6 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Banem.net</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <style type="text/css" media="screen">
   * {
     margin: 0px 0px 0px 0px;
@@ -134,20 +135,20 @@
 
   </style>
 
-  <!--[if IE]>
-  <style type="text/css">
-  	#menu li {
-  		position:static;
-  	}
-  </style>
-  <![endif]-->
 
 </head>
 <body>
 
-<?php
-  include 'nav.php'
-?>
+<!-- NAVBAR -->
+<div id="nav-placeholder">
+
+</div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!-- END NAVBAR -->
 
   <div class="content_section_text">
     <h1>THIS SITE IS STILL UNDER DEVELOPMENT.
