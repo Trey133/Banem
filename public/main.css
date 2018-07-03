@@ -102,3 +102,9 @@ input[type=submit]:hover {
     color: limegreen;
     padding: 20px;
 }
+
+.columns{
+    float: left;
+    position: relative;
+    margin-right: 20px;
+}
