@@ -1,3 +1,9 @@
+div.section_header_red {
+
+background-color: red;
+
+}
+
 .clearfix:after {
   content: "";
   display: table;
