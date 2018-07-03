@@ -104,7 +104,6 @@ input[type=submit]:hover {
 }
 
 .columns{
-    float: left;
     position: relative;
     margin-right: 20px;
 }
