@@ -4,6 +4,18 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Banem.net</title>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDEGudhq6NCQ7OI3VplL9oyEUS8w_PyxZ8",
+        authDomain: "banem-a2ae6.firebaseapp.com",
+        databaseURL: "https://banem-a2ae6.firebaseio.com",
+        projectId: "banem-a2ae6",
+        storageBucket: "banem-a2ae6.appspot.com",
+        messagingSenderId: "50190212694"
+      };
+      firebase.initializeApp(config);
+    </script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <style type="text/css" media="screen">
   * {
@@ -61,33 +73,6 @@
     border: 0px 0px 0px;
   }
 
-  div.content_section_text {
-    padding: 4px 8px 4px 8px;
-
-    font-size: 100%;
-  }
-
-  div.content_section_text pre {
-    margin: 8px 0px 8px 0px;
-    padding: 8px 8px 8px 8px;
-
-    border-width: 1px;
-    border-style: dotted;
-    border-color: #000000;
-
-    background-color: limegreen;
-
-    font-style: italic;
-  }
-
-  div.content_section_text p {
-    margin-bottom: 6px;
-  }
-
-  div.content_section_text ul, div.content_section_text li {
-    padding: 4px 8px 4px 16px;
-  }
-
   div.section_header {
     padding: 3px 6px 3px 6px;
 
@@ -110,19 +95,6 @@
   .floating_element {
     position: relative;
     float: left;
-  }
-
-  div.content_section_text a:link,
-  div.content_section_text a:visited,
-   div.content_section_text a:active {
-    background-color: #DCDFE6;
-
-    color: #000000;
-  }
-
-  div.content_section_text a:hover {
-    background-color: #FFFFFF;
-    color: #DCDFE6;
   }
 
   div.validator {
