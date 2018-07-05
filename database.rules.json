@@ -2,5 +2,11 @@
   "rules": {
     ".read": false,
     ".write": false
-  }
+  },
+    "rules": {
+      "adminContent": {
+        ".read": "auth.token.admin === true",
+        ".write": "auth.token.admin === true",
+      }
+    }
 }
