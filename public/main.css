@@ -67,10 +67,6 @@
    position: relative;
 }
 
-div.login_link a:hover {
-  background: red;
-  color: lime;
-}
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
