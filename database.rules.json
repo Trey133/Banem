@@ -2,7 +2,7 @@
   "rules": {
     ".read": false,
     ".write": false,
-    "adminContent": {
+    "backroom": {
       ".read": "auth.token.admin === true",
       ".write": "auth.token.admin === true",
     }

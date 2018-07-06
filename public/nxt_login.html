@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<link rel="stylesheet" href="https://banem.net/main.css"/>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Banem.net</title>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDEGudhq6NCQ7OI3VplL9oyEUS8w_PyxZ8",
+        authDomain: "banem-a2ae6.firebaseapp.com",
+        databaseURL: "https://banem-a2ae6.firebaseio.com",
+        projectId: "banem-a2ae6",
+        storageBucket: "banem-a2ae6.appspot.com",
+        messagingSenderId: "50190212694"
+      };
+      firebase.initializeApp(config);
+    </script>
+    firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {
+        window.location.href("https://banem.net/backroom/Clients/platforms/index.html")
+      } else {
+        window.location.href("https://banem.net/login.html")
+      }
+    });
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style type="text/css" media="screen">
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 99px;
+    width: 100%;
+
+    background-color: #000000;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #000000;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_blue {
+    background-color: #0F2464;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.validator {
+  }
+
+  .input {
+  background-color; #000000;
+  color: #32CD32;
+  }
+
+  </style>
+
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div id="nav-placeholder">
+
+</div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("https://banem.net/nav.html");
+});
+</script>
+<!-- END NAVBAR -->
+
+  <div class="content_section_text">
+    <h1>THIS SITE IS STILL UNDER DEVELOPMENT.
+        PLEASE CHECK BACK SOON.</h1>
+    <h5>ADDRESS ALL INQUIRIES TO admin@banem.net</h5>
+
+
+  </div>
+</div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+</html>
