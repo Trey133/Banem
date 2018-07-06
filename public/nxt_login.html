@@ -16,13 +16,15 @@
       };
       firebase.initializeApp(config);
     </script>
-    firebase.auth().onAuthStateChanged(function(user) {
-      if (user) {
-        window.location.href("https://banem.net/backroom/Clients/platforms/index.html")
-      } else {
-        window.location.href("https://banem.net/login.html")
-      }
-    });
+    <script>
+      firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+          window.location.href("https://banem.net/backroom/Clients/platforms/index.html")
+        } else {
+          window.location.href("https://banem.net/login.html")
+        }
+      });
+    </script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <style type="text/css" media="screen">
   * {
